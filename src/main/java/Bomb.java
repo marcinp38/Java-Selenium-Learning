@@ -5,7 +5,7 @@ public class Bomb {
         int count;
 
         Scanner in = new Scanner(System.in);
-        System.out.print("Gimme the number: ");
+        System.out.print("Gimme the number: ") ;
         count = in.nextInt();
 
         for(int i=count; i>0 ; i--)
