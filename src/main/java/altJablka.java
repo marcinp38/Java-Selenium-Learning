@@ -5,22 +5,24 @@ public class altJablka {
         int qty;
         String fruit;
         Scanner in = new Scanner(System.in);
-        System.out.println("Gimme a fruit: ");
+        System.out.print("Fruit: ");
         fruit = in.nextLine();
 
-        switch(fruit) {
+        switch (fruit) {
             case "bananas":
             case "oranges":
-            case "apples":
-                System.out.println("Gimme quantity of " + fruit+ ": ");
+            case "apples" :
+                System.out.print("Quantity: ");
                 qty = in.nextInt();
-                if (qty < 100)
-                    System.out.println("it's enough of " + fruit + " in here, and there is " + (100 - qty) + " left");
+                if (qty<100)
+                    System.out.println("We can sell you this "+ fruit + " and there is also "+(100-qty) + "kg space more");
                 else
-                    System.out.println("It's " + (qty - 100) + "kg too much of " + fruit + " that you want");
+                    System.out.println(fruit + " is "+(qty -100) + "kg too much");
                 break;
             default:
-                System.out.println("No such thing in store");
+                System.out.println("No such thing as: "+fruit);
         }
+
+
     }
 }
