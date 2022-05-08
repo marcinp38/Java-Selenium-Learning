@@ -17,24 +17,26 @@ public class Homework {
         }
         System.exit(0);
     }
-    private static String datacheck(int number) {
-        int counter=0;
-        for (int i=2; i<=number; i++){
-            if(number%2==0) {
+
+        private static String datacheck ( int number){
+        int counter = 0;
+        for (int i = 2; i <= number + 1; i++) {
+            if (number % 2 == 0) {
                 counter++;
             }
         }
-        if (counter>1)
+        if (counter > 1)
             return dataFalse();
         else
             return dataTrue();
     }
-    private static String dataTrue() {
+        private static String dataTrue () {
         return "Wybrana przez Ciebie liczba jest liczbą pierwszą";
     }
-    private static String dataFalse() {
+        private static String dataFalse () {
         return "Wybrana przez Ciebie liczba NIE jest liczbą pierwszą";
     }
+
 }
 
 //i nie wiem jak zrobic try catcha
