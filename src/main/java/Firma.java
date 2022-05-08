@@ -13,15 +13,15 @@ public class Firma {
         programistaMarcin.nazwisko = "Petynia";
         programistaMarcin.wiek = 33;
 
-        tester.imie = "Wiola";
-        tester.nazwisko = "Nowak";
-        tester.wiek = 26;
+        tester.setImie("Wiola");
+        tester.setNazwisko("Nowak");
+        tester.setWiek(26);
 
         System.out.println(programistaMarcin.imie+" "+programistaMarcin.nazwisko+" lat: "+programistaMarcin.wiek);
         System.out.println(tester.wiek);
 
-        programistaMarcin.wyswietlDane();
-        tester.wyswietlDane();
+        programistaMarcin.wyswietlDane();   //ex2
+        tester.wyswietlDane();              //ex2
     }
 }
 class Pracownik{
@@ -41,4 +41,16 @@ class Pracownik{
     public int getWiek(){
         return wiek;
     }
+
+    public void setImie(String imie) {    //alt+insert setter
+        this.imie = imie;
+    }
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
+    }
+    public void setWiek(int wiek) {
+        this.wiek = wiek;
+
+    }
+
 }
