@@ -22,12 +22,14 @@ public class Firma {
 
         programistaMarcin.wyswietlDane();   //ex2
         tester.wyswietlDane();              //ex2
+
     }
 }
 class Pracownik{
     String imie;
     String nazwisko;
     int wiek;
+
 
     public void  wyswietlDane(){
         System.out.println("Pracownik: "+imie+ " " +nazwisko+"\t"+wiek+"lat");
@@ -52,5 +54,7 @@ class Pracownik{
         this.wiek = wiek;
 
     }
+
+
 
 }
