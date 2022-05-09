@@ -12,9 +12,10 @@ public class Sonar{
 
         List <Integer> list = new ArrayList();
         try{
-            File file = new File("C:\\projekty\\ZTA202201\\src\\main\\java\\AOC12021\\input");
-            Scanner scanner = new Scanner(file);
+            File lista = new File("C:\\projekty\\ZTA202201\\src\\main\\java\\AOC12021\\input");
+            Scanner scanner = new Scanner(lista);
             while(scanner.hasNextLine()){
+
                 String depth = scanner.nextLine();
                 int intDepth = Integer.parseInt(depth);
                 list.add(intDepth);
