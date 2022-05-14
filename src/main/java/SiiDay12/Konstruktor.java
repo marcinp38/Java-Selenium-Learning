@@ -1,3 +1,5 @@
+package SiiDay12;
+
 public class Konstruktor {
     public static void main(String[] args) {
 

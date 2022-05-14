@@ -1,4 +1,4 @@
-
+package SiiDay12;
 
 public class Firma {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ class Pracownik{
 
 
     public void  wyswietlDane(){
-        System.out.println("Pracownik: "+imie+ " " +nazwisko+"\t"+wiek+"lat");
+        System.out.println("SiiDay12.Pracownik: "+imie+ " " +nazwisko+"\t"+wiek+"lat");
     }
     public String getImie(){
         return imie;

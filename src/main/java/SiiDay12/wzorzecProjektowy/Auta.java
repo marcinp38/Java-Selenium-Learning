@@ -1,4 +1,4 @@
-package wzorzecProjektowy;
+package SiiDay12.wzorzecProjektowy;
 
 public class Auta {
     public static void main(String[] args) {

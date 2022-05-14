@@ -1,4 +1,4 @@
-
+package SiiDay12;
 
 public class Mnozenie {
     public static void main(String[] args) {

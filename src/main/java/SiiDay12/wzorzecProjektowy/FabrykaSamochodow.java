@@ -1,4 +1,4 @@
-package wzorzecProjektowy;
+package SiiDay12.wzorzecProjektowy;
 
 public class FabrykaSamochodow {
     public static ISamochod getSamochod(int predkosc) {

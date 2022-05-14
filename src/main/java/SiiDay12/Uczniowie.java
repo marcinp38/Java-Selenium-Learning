@@ -1,3 +1,5 @@
+package SiiDay12;
+
 public class Uczniowie {
     public static void main(String[] args) {
         Student michal = new Student("Michal", "Piorkowski",4.7,180,"846219");

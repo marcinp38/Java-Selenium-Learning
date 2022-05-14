@@ -1,4 +1,4 @@
-package warzywniak;
+package SiiDay12.warzywniak;
 
 public abstract class Owoc implements  iOwoce{
     int cena;

@@ -1,4 +1,4 @@
-package warzywniak;
+package SiiDay12.warzywniak;
 
 public interface iOwoce {
 

@@ -1,3 +1,5 @@
+package SiiDay12;
+
 public class Nauka {
     public static void main(String[] args) {
         przedszkole uczen = new przedszkole("lapanego ", "zwierzatka ", "dodawanie");

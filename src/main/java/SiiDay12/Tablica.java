@@ -1,3 +1,5 @@
+package SiiDay12;
+
 import java.util.Scanner;
 public class Tablica {
     public static void main(String[] args) {

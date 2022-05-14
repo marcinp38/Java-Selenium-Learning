@@ -1,4 +1,4 @@
-package wzorzecProjektowy;
+package SiiDay12.wzorzecProjektowy;
 
 public class Audi implements ISamochod {
     int cena = 150000;

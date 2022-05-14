@@ -1,4 +1,4 @@
-package warzywniak;
+package SiiDay12.warzywniak;
 
 public class Jablko extends Owoc implements iOwoce{
 
