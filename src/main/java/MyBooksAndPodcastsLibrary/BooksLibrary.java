@@ -8,6 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class BooksLibrary {
     Scanner input = new Scanner(System.in);
     List<Books> booksList = new ArrayList<>();
+    String AuthorsFullName;
 
     public void add(Books book) {
         booksList.add(book);
@@ -27,17 +28,27 @@ public class BooksLibrary {
                 "e - exit\n");
     }
 
-
+    Books authorsFullName;
     public void provideAuthorData(){
         System.out.print("Please input Author's name: ");
         String authorsName = input.nextLine();
         System.out.print("Please input Authors surname: ");
         String authorsSurname = input.nextLine();
+        String authorsFullName = authorsName + " " + authorsSurname;
+        System.out.println(authorsFullName);
 
     }
 
+    public List<Books> getAuthorsBooksList() {
+        List<Books> tmp = new ArrayList<>();
+        for (Books item : booksList) {
 
-
+            if (booksList.contains(authorsFullName)) {
+                tmp.add(item);
+            }
+        }
+        return tmp;
+    }
 
     //    public List<Books> getbooksByAuthor(String name, String surname) {
 //        System.out.print("Please input Author's name: ");

@@ -41,12 +41,12 @@ public class Library {
                             case "l":
                                 for (Books books : lib.booksList) {
                                     System.out.println(books);
-                                    System.out.println();
+
                                 }
                             case "s":{
                                 lib.provideAuthorData();
                                 System.out.println();
-//                                lib.getbooksByAuthor();
+                                System.out.println(lib.getAuthorsBooksList());
 //                                lib.showBooksByAuthor();
 
 
@@ -62,6 +62,7 @@ public class Library {
                         }
                     }
                 }
+                System.out.println();
                 break;
 
                 case "p": {
