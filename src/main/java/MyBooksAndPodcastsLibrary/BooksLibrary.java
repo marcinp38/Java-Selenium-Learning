@@ -25,7 +25,7 @@ public class BooksLibrary {
                 "r - show random book\n" +
                 "l - show full list of books\n" +
                 "s - search the books by an author\n" +
-                "e - exit\n");
+                "e - exit");
     }
 
     Books authorsFullName;
