@@ -1,20 +1,20 @@
 package MyBooksAndPodcastsLibrary;
 
 public class Podcasts {
-    private String podcastName;
+    private String podcastTitle;
     private String podcastAuthor;
 
-    public Podcasts(String podcastName, String podcastAuthor) {
-        this.podcastName = podcastName;
+    public Podcasts(String podcastTitle, String podcastAuthor,Genre genre) {
+        this.podcastTitle = podcastTitle;
         this.podcastAuthor = podcastAuthor;
     }
 
-    public String getPodcastName() {
-        return podcastName;
+    public String getPodcastTitle() {
+        return podcastTitle;
     }
 
-    public void setPodcastName(String podcastName) {
-        this.podcastName = podcastName;
+    public void setPodcastTitle(String podcastTitle) {
+        this.podcastTitle = podcastTitle;
     }
 
     public String getPodcastAuthor() {
@@ -23,5 +23,10 @@ public class Podcasts {
 
     public void setPodcastAuthor(String podcastAuthor) {
         this.podcastAuthor = podcastAuthor;
+    }
+
+    @Override
+    public String toString() {
+        return (podcastTitle + " - " + podcastAuthor);
     }
 }
