@@ -1,9 +1,8 @@
 package MyAdditionalExercises.JavaDlaTesterow;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Theory {
+public class TheoryPart1 {
     public static void main(String[] args) {
 
 //          Typy danych proste
