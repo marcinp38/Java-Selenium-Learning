@@ -1,4 +1,4 @@
-package MyAdditionalExercises.JavaDlaTesterow;
+package MyAdditionalExercises.JavaDlaTesterow.PodstawyProjektowania;
 
 public class TheoryPart4 {
     public static void main(String[] args) {

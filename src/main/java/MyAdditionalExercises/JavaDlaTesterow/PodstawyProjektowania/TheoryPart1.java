@@ -1,4 +1,4 @@
-package MyAdditionalExercises.JavaDlaTesterow;
+package MyAdditionalExercises.JavaDlaTesterow.PodstawyProjektowania;
 
 import java.util.Scanner;
 

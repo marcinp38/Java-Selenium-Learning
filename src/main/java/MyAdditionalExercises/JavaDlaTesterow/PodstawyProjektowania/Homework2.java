@@ -1,4 +1,4 @@
-package MyAdditionalExercises.JavaDlaTesterow;
+package MyAdditionalExercises.JavaDlaTesterow.PodstawyProjektowania;
 
 import java.util.Scanner;
 //Homework - topic: przygotuj instrukcje warunkowa ktora bedzie zezwalac na zakup alkoholu od 18 roku zycia

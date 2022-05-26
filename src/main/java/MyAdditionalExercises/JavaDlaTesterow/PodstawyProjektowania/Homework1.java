@@ -1,4 +1,4 @@
-package MyAdditionalExercises.JavaDlaTesterow;
+package MyAdditionalExercises.JavaDlaTesterow.PodstawyProjektowania;
 //Homework - topic: Stworz prosty kalkulator wypisujacy wynik dodawania, odejmowania, mnozenia, dzielenia i modulo
 //dwoch liczb
 import java.util.Scanner;

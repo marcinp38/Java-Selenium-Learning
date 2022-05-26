@@ -1,0 +1,29 @@
+      KLASA - Pewnego rodzaju szablon wg ktorego mozna tworzyc projekty
+        - moze zawierac w sobie pola (zmienne) - np. private int rokProdukcji, public String markaSamochodu,...
+        - moze zawierac w sobie metody - np. public void jedz(){}
+              public - modyfikator dostepu
+                void - czy klasa zwraca wartosc czy nie, jesli nie to void, jesli chcemy to podajemy zwracany typ
+                tzn. String, int, itd.
+                jedz - nazwa metody
+                () - argumenty metody
+                {} - cialo meotdy - tu podajemy instrukcje do wykonania
+        - nie musi zawierac zadnych metod
+        np.
+        public class FirstAuto {
+
+        }
+
+
+      OBIEKT - Przedstawiciel danej klasy
+        - dzieki obiektom bedziemy w stanie wywolywac metody z klasy w ktorej nie ma klasy specjalnej 'main'
+        np.
+        FirstStudent student1 = new FirstStudent();
+            student1.imie = "Marcin";
+            student1.nazwisko = "Petynia";
+
+      METODA - blok ktory zawiera jakies instrukcje
+      - mozna sie do niej odwolywac z innych klas
+      np.
+      public void nazwa() {
+        cialo metody
+      }
