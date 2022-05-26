@@ -1,13 +1,14 @@
 package MyAdditionalExercises.ProgramowanieObiektowe;
 
-import java.util.Scanner;
-
-public class Homework1 {
+public class Homework1Students {
 
 //        Stworz 3 obiekty klasy student.
 //        Przypisz wartosci do pol.
 //        Stworz tablice i dodaj studentow do tablicy.
 public static void main(String[] args) {
+
+    String uczelnia = FirstStudent.nazwaUczelni;
+    FirstStudent.infoUczelnia();
 
     FirstStudent student1 = new FirstStudent();
     student1.imie = "Marcin";
@@ -15,11 +16,14 @@ public static void main(String[] args) {
     student1.nick = "marcinek";
     student1.email = "marcintester@op.pl";
     student1.nrIndeksu = 183381;
+    String uczelniaMarcina = student1.nazwaUczelni;
+
 
     student1.przedstawSie();
     student1.zalogujSie();
     student1.podajEmail();
     student1.podajNrIndeksu();
+    student1.infoUczelnia();
     System.out.println();
 
     FirstStudent student2 = new FirstStudent();

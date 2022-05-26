@@ -27,3 +27,24 @@
       public void nazwa() {
         cialo metody
       }
+
+      KONSTRUKTORY - specjalne metody ktore zwracaja obiekt danej klasy i ktore sa wywolywane automatycznie
+      podczas tworzenia obiektow
+
+      POLA STATYCZNE - odnosza sie do samej klasy, a nie do samej klasy. Jest to pole charakterystyczne dla danej
+      klasy i jest wspoldzielone przez wszystkie obiekty danej klasy. Odwolujemy sie do niego poprzez
+      nazweKlasy.nazwaPolaStatycznego
+      Deklaracja i inicjalizacja pola statycznego -> public static String nazwaUczelni = "AGH";
+      Wywolanie pola statycznego w innej klasie-> String uczelniaMarcina = student1.nazwaUczelni;
+
+      METODY STATYCZNE - Charakterystyczne dla klasy a nie z konkretnymi obiektami klasy. Nie mozna sie odwolac
+      do pol ktore nie sa statyczne wewnatrz metody statycznej bo te pola sa charakterystyczne dla obiektu czyli
+      przedstawiciela danej klasy a ta metode mozemy wywolac bez tworzenia obiektu
+      W metodzie statycznej mozemy odwolywac sie jedynie do pol statycznych
+
+      DZIEDZICZENIE - Podstawowy mechanizm porgramowania obiektowego. Dzieki temu mozemy utworzyc hierarchie klas
+      ktora pozwoli nam na przekazanie pewnych cech klasy bazowej klasom potomnym. Np. dzieci dziedzicza po rodzicach
+      czy dziadkach pewne cechy
+
+      SUPER - slowo kluczowe, wywoluje konstruktor klasy nadrzednej. MUSI byc pierwsza operacja wewnatrz konstruktora
+      klasy potomnej. Po nim mozna przypisywac kolejne argumenty
