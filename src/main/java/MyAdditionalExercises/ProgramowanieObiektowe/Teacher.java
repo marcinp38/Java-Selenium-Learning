@@ -21,4 +21,9 @@ public class Teacher extends PersonDziedziczenie{
         System.out.println("I am " + age + " years old");
     }
 
+    public void walk() {
+        super.walk();
+        System.out.println("I walk very fast");
+    }
+
 }

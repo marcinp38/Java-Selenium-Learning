@@ -1,7 +1,7 @@
 package MyAdditionalExercises.ProgramowanieObiektowe;
 
 public class Homework3App {
-    String appName;
+    public String appName;
 
     public Homework3App(String appName) {
         this.appName = appName;

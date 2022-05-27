@@ -48,3 +48,35 @@
 
       SUPER - slowo kluczowe, wywoluje konstruktor klasy nadrzednej. MUSI byc pierwsza operacja wewnatrz konstruktora
       klasy potomnej. Po nim mozna przypisywac kolejne argumenty
+
+      NADPISYWANIE METOD - przesloniecie dzialania metody z klasy bazowej w klasie  potomnej, zdefiniowanie metody
+      z ta sama nazwa ale innym dzialaniem
+
+      PRZECIAZANIE METOD - definiowanie wewnatrz klasy kilku metod o tej samej nazwie i roznych parametrach
+
+      PACZKI (PACKAGES) - kiedy wraz ze wzrostem funkcjonalnosci projektowanego system/aplikacji rosnie tez liczba
+      klas, konieczne jest logiczne rozdzielenie tych klas na grupy reprezentujace jeden konkretny obszar aplikacji
+      Pozwala rowniez na korzystanie z wielu klas o tych samych nazwach
+
+      MODYFIKATORY DOSTEPU - public, private, protected oraz domyslny.
+      W tej samej klasie mamy dostep do wszystkich rodzajow pol i metod niezaleznie od modyfikatora dostepu
+      Dla klas dziedziczacych
+      - Klasa potomna w tej samej paczce nie ma dostepu do pol private, ani do metod private (do pozostalych typow ma)
+      - Klasa potomna w innej paczce nie ma dostepu do pola i metod typu private oraz default(bez identyfikatora)
+      Dla klas niedziedziczacych - wywolywanie MUSI odbywac sie przez stworzenie obiektu klasy Parent
+      - Klasa w tej samej paczce nie ma dostepu do pola private, ani do metod private (do pozostalych typow ma)
+      - Klasa w innej paczce nie ma dostepu do pola i metod typu private, protected oraz default(bez identyfikatora)
+      jedynie do public
+
+      GETTERY I SETTERY:
+      Gettery sluza do pobierania pol "tylko do odczytu"
+      Settery to metody pozwalajace przypisywac dana wartosc do pola ktore jest prywatne
+
+      FINAL - zmiennej typu final nie mozna zmienic wartosci ktora zostala do niej przypisana
+      Jesli przypiszemy final do obiektu to mozemy zmieniac parametry obiektu, modyfikowac metody itd., ale
+      nie mozemy do tej zmiennej przypisac nowej osoby/nowego obiektu.
+      Jesli oznaczymy jakas klase jako final, nie da sie z niej dziedziczyc
+
+      INTERFEJS - zestaw metod bez ich implementacji - okreslamy zwracany typ, nazwe metody ale nie zwracamy ciala
+      metody, czyli calego kodu ktory jest w srodku. Cialo metody bedzie dostarczone przez klasy ktore beda
+      implementowaly nasz interfejs

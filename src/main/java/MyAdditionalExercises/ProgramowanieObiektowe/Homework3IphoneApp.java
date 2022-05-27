@@ -6,6 +6,6 @@ public class Homework3IphoneApp extends Homework3App{
     }
 
     public void runIphoneApp() {
-        System.out.println("You have ran an IphoneApp");
+        System.out.println("You have ran an "+appName);
     }
 }
