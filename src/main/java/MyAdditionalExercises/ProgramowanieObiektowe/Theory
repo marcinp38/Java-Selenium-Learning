@@ -79,4 +79,27 @@
 
       INTERFEJS - zestaw metod bez ich implementacji - okreslamy zwracany typ, nazwe metody ale nie zwracamy ciala
       metody, czyli calego kodu ktory jest w srodku. Cialo metody bedzie dostarczone przez klasy ktore beda
-      implementowaly nasz interfejs
+      implementowaly nasz interfejs.
+      Na chlopski rozum to jest taki twor ktory tworzy bazowe metody o tych samych nazwach
+      odnoszace sie do grupy klas tego samego typu, np. rower,osobowka, motor jako klasy wchodza w
+      sklad grupy(Interfejsu) Pojazdy, bo kazdy pojazd ma funkcje " jedz z okreslona predkoscia"
+      i juz w klasie main wywolujemy metody z konkretnych klas z okreslonym parametrem a to wszystko bazuje
+      na 1 interfejsie
+
+      POLIMORFIZM - jesli podamy typ ktory moze byc interfejsem lub klasa bazowa to ten typ moze miec kilka postaci,
+      moze to byc kazda z klas ktora implementuje interfejs, lub kazda z klas ktora rozszerza dana klase.
+      W zaleznosci od tego jaki obiekt konkretnej klasy stworzymy to zachowanie aplikacji sie zmienia.
+
+      KLASA ABSTRAKCYJNA - pewne uogolnienie innych klas i jest to klasa ktora nie ma swoich reprezentantow
+      w postaci obiektow czyli nie mozemy stowrzyc obiektow klasy abstrakcyjnej. Klasa abstrakcyjna moze
+      zawierac metody abstrakcyjne czyli takie ktore nie maja implementacji. Tak jak mielismy w interfejsie tylko
+      deklaracje metody bez jej implementacji, tak w klasie abstrakcyjnej mozemy miec taka metode abstrakcyjna
+      ktora tez nie ma implementacji i ta implementacja musi zostac dostarczona w klasach ktore dziedzicza
+      po naszej klasie abstrakcyjnej. Poza metodami abstrakcyjnymi klasa ta moze zawierac stale oznaczone slowami
+      kluczowymi static final, ale moze tez zawierac zwykle metody ktore beda mialy jakas swoja implementacje
+
+      KONWERSJA DANYCH - konwersja niejawna - bezproblemowo konwertujemy np. typ int na typ double (po prostu
+      rozszerzamy liczbe calkowita o zera po przecinku)
+      - konwersja jawna - np. z double do int jawnie deklarujemy ze godizmy sie z utrata pewnych informacji
+      zapis tego wyglada np. tak: int d = a/(int)b - ten nawias narzuca ze godzimy sie z tym zeby np. doubla
+      przekonwertowalo do inta
