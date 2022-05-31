@@ -103,3 +103,45 @@
       - konwersja jawna - np. z double do int jawnie deklarujemy ze godizmy sie z utrata pewnych informacji
       zapis tego wyglada np. tak: int d = a/(int)b - ten nawias narzuca ze godzimy sie z tym zeby np. doubla
       przekonwertowalo do inta
+
+      WYJĄTEK - specjalna sytuacja ktora moze spowodowac zatrzymanie naszego programu
+
+      ENUM - Typ wyliczeniowy, ktory umozliwia w Javie zadeklarowanie ograniczonej liczby mozliwych wartosci
+
+      KLASA ANONIMOWA - to klasa definiowana w kodzie ktora ma dokladnie 1 instancje tzn dokladnie 1 obiekt
+      Musimy dostarczyc od razu implementacje metod ktore byly zdefiniowane w konkretnym interfejsie
+
+      WYRAZENIA LAMBDA - pozwalaja pisac kod w sposob bardziej zwiezly. Kod zyskuje na czytelnosci i jest
+      latwiejszy w utrzymaniu. Jest to krotka forma zapisania klasy anonimowej ktora jest implementacja
+      interfejsu posiadajacego tylko i wylacznie 1 metode. Z wyrazenia lambda korzysta sie m.in. w strumieniach
+
+      STRUMIENIE - sluza do przetwarzania danych i w strumien mozemy opakowac dowolny zestaw danych i mozemy
+      pozniej wykonywac jakies operacje na tych danych, przetwarzac te dane. Operacje zwiazane ze strumieniami
+      mozemy podzielic na 3 grupy:
+      1. Operacje odpowiedzialne za stworzenie strumienia
+      2. Przetwarzanie danych wewnatrz strumienia
+      3. Zakonczenie strumienia
+
+      KOLEKCJE - to implementacje tzw. struktur danych, w standardowej bibliotece Javy implementuja rozne
+      interfejsy.
+
+      KOLEKCJE - LISTA - podobnie jak tablica grupuje elementy, nie musimy sie jednak przejmowac rozmiarem listy
+      poniewaz bedzie sie ona automatycznie powiekszala, wraz z dodawaniem nowych elementow, czyli przy tworzeniu
+      listy nie bedziemy deklarowac jak duza ma byc to lista - tak musielismy robic w przypadku tablicy
+      Kolejnosc dodawania elementow ma tutaj znaczenie poniewaz kazdy nowy element bedzie mial swoj indeks i
+      zaczynamy numerowac od 0 jak w przypadku tablicy. Dwie najczesciej wystepujace implementacje interfejsu
+      listy to ArrayList i LinkedList.
+      ArrayList - uzywamy gdy nasza aplikacja odczytuje jakies dane wielokrotnie z tej listy, gdy nasza aplikacja
+      skupia sie bardziej na czytaniu danych to korzystamy z ArrayListy
+      LinkedList - uzywamy w przypadku gdy np. chcemy usuwac dane z listy to korzystamy z tej opcji.
+
+      KOLEKCJE - ZBIORY - to kolekcje sluzace do przechowywania unikalnych elementow, czyli nie mozemy miec tutaj
+      duplikatow. W listach jest to dopuszczalne natomiast w zbiorach juz nie. Zbiory w jezyku Java implementuja
+      interfejs Set i w przypadku zbioru nie jest istotna kolejnosc dodawanych elementow. Nie bedziemy mieli tutaj
+      indeksow dla tych elementow, nie bedziemy w stanie pobrac elementu na podstawie indeksu gdyz tu kolejnosc nie
+      gra roli. Najpopularniejsza implementacja interfejsu Set jest HashSet, ale mamy takze taka implementacje
+      jak LinkedHashSet.
+
+      KOLEKCJE - MAPY - jest to kolekcja przechowujaca pary klucz-wartosc. W mapie trzymamy klucze, ktorym
+      odpowiadaja jakies wartosci. Wazna rzecza jest to, ze klucze musze byc unikalne, a wartosci moga sie
+      powtarzac. Najpopularniejsza implementacja Mapy to HashMap

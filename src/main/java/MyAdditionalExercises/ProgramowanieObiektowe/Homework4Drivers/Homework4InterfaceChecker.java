@@ -1,9 +1,15 @@
 package MyAdditionalExercises.ProgramowanieObiektowe.Homework4Drivers;
 
 public class Homework4InterfaceChecker {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        Homework4WebDriver driver = getDriver("firefox");
+        DriverType[] driverTypes = DriverType.values();
+        for (int i = 0; i < driverTypes.length; i++) {
+            System.out.println(driverTypes[i].name);
+            System.out.println(driverTypes[i].path);
+        }
+
+        Homework4WebDriver driver = getDriver(DriverType.CHROME);
         driver.get();
         driver.findElementBy();
         driver.findElementBy();
@@ -28,13 +34,14 @@ public class Homework4InterfaceChecker {
 
         }
 
-    private static Homework4WebDriver getDriver(String name){
-        if (name.equals("chrome")) {
+    private static Homework4WebDriver getDriver(DriverType type) {
+        if (type.name.equals("chrome")) {
+            System.out.println(type.path);
             return new Homework4ChromeDriver();
-        } else if(name.equals("firefox")){
-            return new Homework4FirefoxDriver();
         }
-        return null;
+            System.out.println(type.path);
+            return new Homework4FirefoxDriver();
+
     }
 
 }
